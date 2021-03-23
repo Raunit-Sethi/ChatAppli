@@ -1,0 +1,20 @@
+{
+  "name": "chat-appli",
+  "version": "1.0.0",
+  "description": "Chat Application that uses Express, Mongoose and Socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "RonW",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^3.4.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2",
+    "pug": "^3.0.2",
+    "socket.io": "^2.4.1"
+  }
+}

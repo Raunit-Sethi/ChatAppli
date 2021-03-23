@@ -1,0 +1,38 @@
+doctype html
+html 
+    head 
+        title Chatters can now Chat - RonW 
+        link(rel='stylesheet', href = 'https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css')
+        
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    body 
+        #chat-appli 
+            #chat.has-text-centered 
+                section.hero.is-success 
+                    .hero-body 
+                        .container 
+                            h1.title Chat 
+                                h2 Chat Application with Node and Socket.io 
+                section.section.chat-container
+                    .container
+                        .columns 
+                            .box.column.is-8.is-offset-2 
+                                h2.title Chatbox 
+                                .chat-messages.has-text-left
+                                    ul#chat-messages 
+                                form
+                                    .field.has-addons 
+                                        p.control 
+                                            input(type='text', class='input', value='Chatter 1', id='name')
+                                        p.control.is-expanded 
+                                            input(type='text', class='input', placeholder='Enter meessage here', id='message')
+                                        p.control 
+                                            input(type='submit', class='button is-success', value='POST')
+                footer 
+                    .container 
+                        .content 
+                            p 
+                                | Created by 
+                                a(href='https://github.com/Raunit-Sethi') Ron W
+            script(src='../views/main.js')
